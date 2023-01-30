@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -76,13 +76,12 @@ namespace EmiliaMorejón_EjercicioDF.Controllers
             return View(artista);
         }
 
-        // POST: Artistas/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ArtistaID,NombrePilaArtista,NombreArtistico,Fecha
-}
+ }
 
     internal interface IArtistaMediator
     {
+        void Crear(Artista artista);
+        Artista ObtenerPorId(int value);
+        object ObtenerTodos();
     }
 }
