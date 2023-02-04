@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using EmiliaMorejon_CFEjercicio.Data;
-using EmiliaMorejon_CFEjercicio.Models;
+using EmiliaMorejón_EjercicioDF.Data;
+using EmiliaMorejón_EjercicioDF.Models;
 
-namespace EmiliaMorejon_CFEjercicio.Controllers
+namespace EmiliaMorejón_EjercicioDF.Controllers
 {
     public class BurgersController : Controller
     {
-        private readonly EmiliaMorejon_CFEjercicioContext _context;
+        private readonly EmiliaMorejón_EjercicioDFContext _context;
 
-        public BurgersController(EmiliaMorejon_CFEjercicioContext context)
+        public BurgersController(EmiliaMorejón_EjercicioDFContext context)
         {
             _context = context;
         }
@@ -141,7 +141,7 @@ namespace EmiliaMorejon_CFEjercicio.Controllers
         {
             if (_context.Burger == null)
             {
-                return Problem("Entity set 'EmiliaMorejon_CFEjercicioContext.Burger'  is null.");
+                return Problem("Entity set 'EmiliaMorejón_EjercicioDFContext.Burger'  is null.");
             }
             var burger = await _context.Burger.FindAsync(id);
             if (burger != null)
