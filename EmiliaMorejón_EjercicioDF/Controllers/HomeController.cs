@@ -1,8 +1,8 @@
-using EmiliaMorejon_CFEjercicio.Models;
+using EmiliaMorejón_EjercicioDF.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace EmiliaMorejon_CFEjercicio.Controllers
+namespace EmiliaMorejón_EjercicioDF.Controllers
 {
     public class HomeController : Controller
     {
